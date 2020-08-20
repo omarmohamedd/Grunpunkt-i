@@ -457,6 +457,19 @@ ul li
 
 @media (max-width:1000px)
 {
+    html,body{
+    overflow-x: hidden;
+}
+   .nav-logo img
+    {
+        height: 40px;
+    }
+    .carousel-item img
+    {
+        height: 50vh !important;
+      object-fit:cover;
+      
+    }
     
     h1
     {
@@ -464,12 +477,14 @@ ul li
        top:  40%;
         line-height: 30px;
     }
+   
     .section-ii-img
     {
       display: none;
     }
      .section-ii-text
     {
+        padding: 20px;
         display: inline-block;
         overflow: hidden;
         max-height: 100%;
@@ -495,8 +510,8 @@ ul li
     }
     .slider-div img
     {
-       height: 200px;
-        width: 200px;
+       height: 150px;
+        width: 150px;
     }
     .slick-dots
     {
@@ -505,6 +520,7 @@ ul li
     .slider-div p
     {
        font-size: 14px; 
+        margin-left: 20px;
     }
     #section-iv
     {
@@ -554,6 +570,11 @@ ul li
     .contact-fix-ii
     {
         display: block;
+    }
+    .maps-response
+    {
+        width: 250px;
+        height: 300px;
     }
 }
 
