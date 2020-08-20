@@ -11,6 +11,8 @@ const sectionII=document.querySelector("#section-ii");
 const sectionIII=document.querySelector("#section-iii");
 const hI=document.querySelector("h1");
 const spanI=document.querySelector(".span-1");
+const spinner=document.querySelector("#loader");
+const body=document.querySelector("body");
 let controller;
 let sectionIIScene;
 
@@ -29,7 +31,6 @@ window.addEventListener("load",()=>{
     navTl.fromTo(hI,{opacity:0,y:"200%"},{opacity:1,y:"50%"},"-=1");
     navTl.fromTo(spanI,{color:"white"},{color:"#00A86B"});
 });
-    
 
 
 function animateSectionII()

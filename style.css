@@ -28,6 +28,7 @@ body
     font-family: 'Montserrat', sans-serif;
     background: rgb(248,248,255);
     overflow-x: hidden;
+  
 }
 .navbar
 {
@@ -73,7 +74,7 @@ background:#ffff;
 .carousel-inner{
   width:100vw;
   max-height: 100vh !important;
-    
+      
 }
 h1
 {
@@ -344,7 +345,12 @@ ul li
     
 }
 
-
+.grunpunkt
+{
+    font-weight: 700;
+    font-size: 20px;
+    color: #37B599;
+}
 .about-svg
 {
     height: 400px;
@@ -610,8 +616,6 @@ ul li
          
     } 
 }
-
-
 
 
 
