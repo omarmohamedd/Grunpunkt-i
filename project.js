@@ -145,8 +145,11 @@ new ScrollMagic.Scene({
 sliderAnimation();
 
 
-
-
+const textFix=document.querySelector("windowFix");
+if(window.innerWidth<1000)
+    {
+        textLayer.style.opacity="0";
+    }
 
 
 

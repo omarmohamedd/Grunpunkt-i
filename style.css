@@ -462,7 +462,15 @@ ul li
 }
    .nav-logo img
     {
-        height: 40px;
+        
+        height: 4vh;
+       object-fit: contain;
+    }
+    .nav-logo img
+    {
+        position: absolute;
+        top: 2px;
+        left: -70px;
     }
     .carousel-item img
     {
@@ -470,7 +478,10 @@ ul li
       object-fit:cover;
       
     }
-    
+    .about-response
+    {
+        padding-top: 60px;
+    }
     h1
     {
         font-size: 30px;
@@ -497,6 +508,7 @@ ul li
     {
         font-size: 14px;
         line-height: 14px;
+        text-shadow: none;
     }
     
     .svgs svg
@@ -519,8 +531,8 @@ ul li
     }
     .slider-div p
     {
-       font-size: 14px; 
-        margin-left: 20px;
+       font-size: 12px; 
+        margin-left: 18px;
     }
     #section-iv
     {
