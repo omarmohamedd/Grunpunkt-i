@@ -84,12 +84,23 @@ h1
     position: absolute;
     top: 40%;
     left: 5%;
-    color:  #ffff;
+    color: #ffff;
     transform: translate(-5%,40%);
-    font-size: 70px;
+    font-size: 50px;
     line-height: 80px;
+    opacity: 0;
 }
-
+.h1-fix
+{
+    font-size: 20px;
+    position: relative;
+    top: -3vh;
+}
+.h1-spacing
+{
+    position: relative;
+    top: -8vh;
+}
 #section-ii
 {
     height: 100vh;
@@ -510,14 +521,18 @@ ul li
     .about-response
     {
         padding-top: 60px;
+        height: auto;
     }
     h1
     {
         font-size: 30px;
-       top:  40%;
+       top:  50%;
         line-height: 30px;
     }
-   
+   .h1-fix
+    {
+       display: none;
+    }
     .section-ii-img
     {
       display: none;
