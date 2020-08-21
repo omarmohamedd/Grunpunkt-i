@@ -11,8 +11,6 @@ const sectionII=document.querySelector("#section-ii");
 const sectionIII=document.querySelector("#section-iii");
 const hI=document.querySelector("h1");
 const spanI=document.querySelector(".span-1");
-const spinner=document.querySelector("#loader");
-const body=document.querySelector("body");
 let controller;
 let sectionIIScene;
 
@@ -146,7 +144,7 @@ new ScrollMagic.Scene({
 sliderAnimation();
 
 
-const textFix=document.querySelector("windowFix");
+
 if(window.innerWidth<1000)
     {
         textLayer.style.opacity="0";
