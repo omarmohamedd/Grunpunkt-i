@@ -22,9 +22,10 @@ const navTl=gsap.timeline({
             defaults:{duration:1,ease:"power2.inout"}
         });
  
+
 window.addEventListener("load",()=>{
     
-    navTl.fromTo(navBar,1.5,{y:"-200%",background:"transparent"},{y:"0%",background:"#ffff"});
+    navTl.fromTo(navBar,1.5,{y:"-200%",opacity:0,background:"transparent"},{y:"0%",opacity:1,background:"#ffff"});
     
     navTl.fromTo(hI,{opacity:0,y:"200%"},{opacity:1,y:"50%"},"-=1");
     navTl.fromTo(spanI,{color:"white"},{color:"#00A86B"});
