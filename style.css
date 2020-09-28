@@ -23,6 +23,18 @@ html
 {
      scroll-behavior: smooth;
 }
+a
+{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+a:hover
+{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
 body
 {
     font-family: 'Montserrat', sans-serif;
@@ -38,8 +50,9 @@ background:#ffff;
     top: 0;
     left: 0;
     width: 100%;
-    padding-bottom: 0;
-    padding: 0;
+    padding-bottom: 0 !important;
+    padding: 0 !important;
+    
 }
 .nav-fixx
 {
@@ -63,13 +76,38 @@ background:#ffff;
     font-size: 18px;
     font-weight: 700;
     transition: color 0.2s ease-in-out;
+    overflow-y: hidden;
     
 }
-.nav-list li a:hover
+.list
 {
-   color: #9FD6BB !important;
-    border-bottom: solid 2px #9FD6BB ;
    
+    position: relative;
+    overflow: hidden;
+}
+.list:after
+{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #5CB98C;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    transform: translateX(-101%);
+}
+
+.list:hover::after
+{
+transition: transform 0.4s ease;
+ transform: translateX(0%);
+}
+
+.backLine:after
+{
+    transition: transform 0.4s ease;
+ transform: translateX(100%);
 }
 
 
@@ -82,30 +120,45 @@ background:#ffff;
 h1
 {
     position: absolute;
+    top: 30%;
+    left: 5%;
+    color: #ffff;
+    transform: translate(-5%,40%);
+    font-size: 50px;
+    line-height: 60px;
+    opacity: 0;
+}
+h5
+{
+    position: absolute;
     top: 35%;
     left: 5%;
     color: #ffff;
     transform: translate(-5%,40%);
     font-size: 50px;
-    line-height: 80px;
-    opacity: 0;
+    line-height: 60px;
 }
-.h1-fix
+h6
 {
-    font-size: 20px;
-    position: relative;
-    top: -3vh;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: #ffff;
+    transform: translate(-5%,40%);
+    font-size: 50px;
+    line-height: 60px;
 }
-.h1-spacing
+.span-2
 {
-    position: relative;
-    top: -8vh;
+    color: #00A86B;
 }
+
 #section-ii
 {
-    height: 100vh;
+    height: auto;
     width: 100vw;
-   
+    padding: 100px 0px;
+    
 }
 
 
@@ -128,41 +181,49 @@ h1
     position: relative;
     overflow: hidden;
     padding-right: 5rem;
+  
 }
 .section-ii-text-layer,.section-ii-img-layer
 {
     position: absolute;
     top: 0;
     left: 0;
-    background:rgb(248,248,255);
+   background:rgb(248,248,255);
     height: 100%;
     width: 100%;
     overflow: hidden;
+    
 }
 .section-ii-img
 {
    flex: 1;
     position: relative;
     overflow: hidden;
-   
+ 
 }
 
 .section-ii-text h2
 {
-    font-weight: 700;
-    color: #3F3F3F;
-    line-height: 80px;
-    text-shadow: 1px 1px 2px #3F3F3F;
+    font-weight:900;
+    font-size: 28px;
+    color:white;
+    line-height: 60px;
+    background: #37B599;
+   padding-left: 7px;
+   max-width: 620px;
+    border-radius: 12px;
 }
 
 .section-ii-text p
 {
-     color: #3F3F3F;
+     color: black;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
     letter-spacing: 1px;
     overflow: hidden;
+    padding-top: 50px;
+
 }
 
 #section-iii
@@ -245,55 +306,348 @@ h1
 {
     height: 100vh;
     margin: auto;
-    text-align: center;   
+     
+   
 }
-
+.products-gallery
+{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+        "h2 h2 h2 h2 h2 h2"
+        "feedManagment feedManagment gutHealthManagement gutHealthManagement gutHealthManagement toxinsManagement"
+        "feedManagment feedManagment gutHealthManagement gutHealthManagement gutHealthManagement toxinsManagement"
+        "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes "
+         "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes"
+         "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes";
+}
 
 #section-iv h2
 {
-   margin-top: 80px;
+  
       font-size: 50px;
     line-height: 70px;
     font-weight: 700;
-    color: #3F3F3F;
+    color: #37B599;
     text-align: center;
+    grid-area: h2;
+    padding-top: 50px;
 }
-.slider-div p
+
+.feed-managment
 {
-   color: #3F3F3F;
-    font-size: 20px;
-    font-weight: 700; 
+    
+    grid-area: feedManagment;
+    background: #D30557;
+    margin: 6px;
+    position: relative;
+    
 }
-.slider-div img
+.products-img
 {
-    height: 500px;
-    width: 500px;
     object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.products-layer
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+     border: solid 10px #624A25;
+}
+.products-layer p
+{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    font-size: 22px;
+    line-height: 34px;
+}
+.feed-span
+{
+   
+    font-size: 28px;
+    font-weight: 600;
+   
+}
+.view-products
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    color: white;
+    transition: all 0.5s ease;
+    background: #624A25 !important;
+    border: #624A25;
+}
+.view-products:focus
+{
+    outline: none  !important;
+  box-shadow: none !important;
+}
+.feed-managment:hover .view-products
+{
+    opacity: 1;
     cursor: pointer;
+}
+.feed-managment:hover .products-img
+{
+    filter: blur(4px);
+  -webkit-filter: blur(4px);
+    
+}
+.gutHealthManagement
+{
+    grid-area: gutHealthManagement;
+    background: #00ABA5;
+    position: relative;
+    margin: 6px;
+}
+
+.products-layer-i
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+     border: solid 10px #008081;
+    
+}
+.products-layer-i p
+{
+    color: white;
+    position: absolute;
+      bottom: 0;
+     left: 5px;
+     font-size: 22px;
+    line-height: 34px;
+}
+.view-products-i
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    color: white;
+    transition: all 0.5s ease;
+    background:  #008081 !important;
+    border:  #008081;
+}
+.view-products-i:focus
+{
+    outline: none  !important;
+  box-shadow: none !important;
+}
+.gutHealthManagement:hover .view-products-i
+{
+    opacity: 1;
+    cursor: pointer;
+}
+.gutHealthManagement:hover .products-img
+{
+    filter: blur(4px);
+  -webkit-filter: blur(4px);
+    
+}
+.toxinsManagement
+{
+    grid-area:toxinsManagement;
+    background:#009977;
+    margin: 6px;
+    position: relative;
+}
+
+
+.products-layer-ii
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+     border: solid 10px #2C2C31;
+}
+.products-layer-ii p
+{
+    color: white;
+    position: absolute;
+      bottom: 0;
+     left: 5px;
+     font-size: 22px;
+    line-height: 34px;
+}
+.view-products-ii
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    color: white;
+    transition: all 0.5s ease;
+    background: #2C2C31 !important;
+    border: #2C2C31;
+}
+.view-products-ii:focus
+{
+    outline: none  !important;
+  box-shadow: none !important;
+}
+.toxinsManagement:hover .view-products-ii
+{
+    opacity: 1;
+    cursor: pointer;
+}
+.toxinsManagement:hover .products-img
+{
+    filter: blur(4px);
+  -webkit-filter: blur(4px);
     
 }
 
-.slick-dots
+.vetsSolutions
 {
-  position: relative;
-    top: 20px;
+    grid-area:vetsSolutions;
+    background:#EA6601;
+    margin: 6px;
+    position: relative;
+    
 }
-.slick-dots li.slick-active button:before, .slick-dots li button:before {
-    color: dimgray;
+.products-layer-v
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+     border: solid 10px #CBAB87;
+}
+.products-layer-v p
+{
+    color: white;
+    position: absolute;
+      bottom: 0;
+    left: 5px;
+   font-size: 22px;
+    line-height: 34px;
+}
+.view-products-v
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    color: white;
+    transition: all 0.5s ease;
+    background:#CBAB87 !important;
+    border: #CBAB87;
+}
+.view-products-v:focus
+{
+    outline: none  !important;
+  box-shadow: none !important;
+}
+.vetsSolutions:hover .view-products-v
+{
     opacity: 1;
-    font-size: 16px;
+    cursor: pointer;
 }
-.slick-dots li.slick-active button {
-    border: 5px solid #9FD6BB;
-    border-radius: 100%;
+.vetsSolutions:hover .products-img
+{
+    filter: blur(4px);
+  -webkit-filter: blur(4px);
+    
 }
-.slick-dots li.slick-active button:before {
-    color: transparent;
+
+
+.rawMaterialsAndPremixes
+{
+      grid-area:rawMaterialsAndPremixes;
+    background:#FF8961;
+    margin: 6px;
+    position: relative;
 }
+
+.products-layer-iii
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+     border: solid 10px #C0C0C0;
+}
+.products-layer-iii p
+{
+    color: white;
+    position: absolute;
+      bottom: 0;
+    left: 5px;
+    font-size: 22px;
+    line-height: 34px;
+}
+.view-products-iii
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    color: white;
+    transition: all 0.5s ease;
+    background:#C0C0C0 !important;
+    border:#C0C0C0;
+}
+.view-products-iii:focus
+{
+    outline: none  !important;
+  box-shadow: none !important;
+}
+.rawMaterialsAndPremixes:hover .view-products-iii
+{
+    opacity: 1;
+    cursor: pointer;
+}
+.rawMaterialsAndPremixes:hover .products-img
+{
+    filter: blur(4px);
+  -webkit-filter: blur(4px);
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 footer
 {
+    margin-top: 50px;
     height:auto;
     background:#37B599;
     color: #F5F5F1;
@@ -307,13 +661,14 @@ footer
 }
 ul
 {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 ul li
 {
     list-style: none;
     text-decoration: none;
-    padding: 5px;
+    padding: 3px;
+    font-size: 14px;
 }
 .links:hover
 {
@@ -332,77 +687,449 @@ ul li
 
 
 
-#products-i
+#feed
 {
-    height: 100vh;
-    padding: 50px;
+    height: auto;
     width: 100%;
+    padding-top: 60px;
+   
 }
-
-.products-i-container
+.feed-img
+{
+    height: 50%;
+    background-image: url(imgs/Grunpunket-08.jpg);
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+       filter: blur(1px);
+  -webkit-filter: blur(1px);
+    position: relative;
+    
+}
+.feed-img-gut
+{
+     height: 50%;
+    background-image: url(imgs/Grunpunket-11.jpg);
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+       filter: blur(1px);
+  -webkit-filter: blur(1px);
+    position: relative; 
+}
+.feed-img-toxins
+{
+     height: 50%;
+    background-image: url(imgs/Grunpunket-12.jpg);
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+       filter: blur(1px);
+  -webkit-filter: blur(1px);
+    position: relative; 
+}
+.feed-img-vets
+{
+     height: 50%;
+    background-image: url(imgs/Grunpunket-13.jpg);
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+       filter: blur(1px);
+  -webkit-filter: blur(1px);
+    position: relative; 
+}
+.feed-img-raw
+{
+     height: 50%;
+    background-image: url(imgs/Grunpunket-14.jpg);
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+       filter: blur(1px);
+  -webkit-filter: blur(1px);
+    position: relative; 
+}
+.feed-layer
 {
     height: 100%;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.feed-img-container
+{
+    position:relative;
+}
+.feed-container
+{
+    height:auto;
+    width: 90%;
     margin: auto;
+    padding-top: 50px;
+}
+
+.feed-h2
+{
+    
+    font-size: 40px;
+    font-weight: 900;
+    bottom: 120px;
+left: 10px;
+    color: white;
+  position: absolute;
+  
+}
+.toxins-h2-fix
+{
+       bottom: 150px;
+left: 10px;
+  position: absolute; 
+}
+.vets-h2-fix
+{
+       bottom: 105px;
+left: 10px;
+  position: absolute; 
+}
+.feed-p
+{
+    width: 600px;
+    bottom:0;
+left:10px;
+    color: white;
+  position: absolute; 
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+.gut-p-fix
+{
+   position: absolute;  
+    bottom:12%;
+}
+
+.product-i ul
+{
+   
+    margin: 0;
+    padding: 0;
+    
+}
+.product-i ul li
+{
+color:#624A25;
+ 
+}
+.dot
+{
+    font-size: 40px;
+    line-height: 10px;
+}
+.product-fix
+{
+    opacity: 0;
+}
+.product-container
+{
+    display: flex;
+ 
    
 }
 
-
-.products-i-img img
+.product-i
 {
-    height: 600px;
-    width: 600px;
-    object-fit: cover;
-    
+   
+    flex: 1;
+    margin: 0px 10px;
+    padding: 5px;
+    border: solid 5px   #624A25 ;
+    position: relative;
+    padding-bottom: 100px;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+.product-i:hover
+{
+    transform: scale(1);
+    box-shadow: 6px 6px 6px gray;
+}
+.product-p
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:  #624A25 ;
+    color: white;
+     font-size:40px;
+    font-weight: 600;
+    padding: 1px 30px;
+    border: solid 5px rgb(248,248,255);
+    border-radius: 12px;
 }
 
+.products-row
+{
+    display: flex;
+
+}
+
+.products-row p
+{
+   flex: 1;
+    background:  #624A25 ;
+    margin: 0px 5px;
+    color: white;
+    padding: 3px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.wave-container
+{
+    position: absolute;
+    left: -0.3%;
+    bottom: 0;
+    width: 60%;
+    height:40%;
+    overflow: hidden;
+}
+.upper-wave-container
+{
+    position: absolute;
+    right: -0.2%;
+    top: -0.3%;
+    width: 50%;
+    height:20%;
+    overflow: hidden;
+}
+.upper-product-wave-img
+{
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(33%,-36%);
+}
+
+.product-wave-img
+{
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-10%,25%);
+}
+.vets-wave-fix
+{
+   transform: translate(-12%,25%);  
+}
+.raw-wave-fix
+{
+   transform: translate(-15%,25%);  
+}
+.feed-wave-fix
+{
+    transform: translate(-12%,25%);  
+}
+.down-logo
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    transform: translate(30%,35%);
+}
+.upper-logo
+{ 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 240px;
+    transform: translate(-42%,-37%);
+    
+}
+.upper-logo-left
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 240px;
+    transform: translate(42%,-37%);  
+}
+.down-logo-left
+{
+      position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transform: translate(-30%,35%); 
+}
+.wave-container-left
+{
+     position: absolute;
+    right: -0.3%;
+    bottom: 0;
+    width: 60%;
+    height:40%;
+    overflow: hidden;  
+}
+
+.product-wave-img-left
+{
+  width: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+      transform: translate(10%,25%);
+}
+.feed-wave-fix-left
+{
+    transform: translate(12%,25%);  
+}
+.vets-wave-fix-left
+{
+         transform: translate(12%,25%);
+}
+.raw-wave-fix-left
+{
+      transform: translate(15%,25%);
+}
+.upper-wave-container-left
+{
+     position: absolute;
+    left: -0.2%;
+    top: -0.3%;
+    width: 50%;
+    height:20%;
+    overflow: hidden;
+  
+}
+
+.upper-product-wave-img-left
+{
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-33%,-36%);
+}
+
+
+.product-i-gut
+{
+   border: solid 5px #008081; 
+}
+.product-p-gut
+{
+    background: #008081;
+}
+.products-row-gut p
+{
+      background: #008081;
+}
+
+.product-i-toxins
+{
+   border: solid 5px #2C2C31; 
+}
+.product-p-toxins
+{
+    background: #2C2C31;
+}
+.products-row-toxins p
+{
+      background: #2C2C31;
+}
+
+.product-i-vets
+{
+   border: solid 5px #CBAB87; 
+}
+.product-p-vets
+{
+    background: #CBAB87;
+}
+.products-row-vets p
+{
+      background: #CBAB87;
+}
+
+
+.product-i-raw
+{
+   border: solid 5px #C0C0C0 ; 
+}
+.product-p-raw
+{
+    background: #C0C0C0 ;
+}
+.products-row-raw p
+{
+      background: #C0C0C0 ;
+}
+.product-p-raw-fix
+{
+    font-size: 26px;
+}
+
+#about
+{
+    height:auto;
+    width: 100%;
+    padding-top: 100px;
+   text-align: center;
+}
+
+.about-h
+{
+    font-weight: 700;
+    font-size: 40px;
+    color: #37B599; 
+    padding-bottom: 30px;
+}
+.more-about
+{
+    height: auto;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.about-i
+{
+    flex: 1;
+   margin: 10px;
+    border: solid 4px #37B599;
+}
+.about-h3
+{
+ font-weight: 700;
+    font-size: 28px;
+    color: #37B599; 
+    padding-top: 5px;
+}
+.about-i p
+{
+line-height: 28px;
+ 
+}
+.about-i-fix
+{
+    opacity: 0;
+}
 .grunpunkt
 {
     font-weight: 700;
     font-size: 20px;
     color: #37B599;
 }
-.about-svg
-{
-    height: 400px;
-    width: 400px;
-}
-.lamp-1st-row
-{
-    fill:transparent;
-    animation: rowi 4s infinite ease-in-out;
-    
-   
-}
-.lamp-2nd-row
-{
-      fill:transparent;
-    animation: rowii 4s infinite ease-in-out;
 
-}
-.lamp-inner
+#contact
 {
-    fill:transparent; 
-       animation: lampinner 4s infinite ease-in-out;
-}
-.lamp-left-light
-{
-    fill:transparent; 
-    animation: leftlamp 4s infinite ease-in-out;
-}
-
-.lamp-right-light
-{
-    fill:transparent;
-      animation: rightlamp 4s infinite ease-in-out;
-}
-.lamp-half-light
-{
-    fill:transparent; 
-    animation: halflamp 4s infinite ease-in-out;
+   height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-p
 {
@@ -411,67 +1138,6 @@ ul li
 .contact-p:hover
 {
     color: #3F3F3F;
-}
-@keyframes rowi
-{
-   
-    20%,100%
-    {
-      fill: #9FD6BB ;  
-        transform: translate(-271.4624px, -58.94488px);
-       
-    }
-}
-
-@keyframes rowii
-{
-   
-    20%,100%
-    {
-      fill: #9FD6BB ;  
-        transform: translate(-271.4624px, -58.94488px);
-       
-    }
-}
-@keyframes lampinner
-{
-   
-    40%,100%
-    {
-      fill: #9FD6BB ;  
-        
-       
-    }
-}
-@keyframes leftlamp
-{
-   
-    70%,100%
-    {
-      fill: #9FD6BB ;  
-         transform: translate(-271.4624px, -58.94488px);
-       
-    }
-}
-@keyframes rightlamp
-{
-   
-    70%,100%
-    {
-      fill: #9FD6BB ;  
-         transform: translate(-271.4624px, -58.94488px);
-       
-    }
-}
-@keyframes halflamp
-{
-   
-    60%,100%
-    {
-      fill: #9FD6BB ;  
-         transform: translate(-271.4624px, -58.94488px);
-       
-    }
 }
 
 @media(max-width:600px)
@@ -494,6 +1160,10 @@ ul li
     {
         height: auto;
     }
+    .footer-fix
+    {
+        padding-left: 0 !important;
+    }
 }
 @media (max-width:1000px)
 {
@@ -512,10 +1182,17 @@ ul li
         top: 2px;
         left: -70px;
     }
+    .list:after
+{
+   
+    width: 100px;
+  
+}
     .carousel-item img
     {
        
       object-fit:cover;
+        width: 100vw !important;
       
     }
     .about-response
@@ -529,9 +1206,17 @@ ul li
        top:  50%;
         line-height: 30px;
     }
-   .h1-fix
+  h5
     {
-       display: none;
+      font-size: 30px;
+       top:  50%;
+        line-height: 30px;  
+    }
+    h6
+    {
+        font-size: 30px;
+       top:  50%;
+        line-height: 30px;
     }
     .section-ii-img
     {
@@ -640,6 +1325,191 @@ ul li
     {
         font-size: 12px;
     }
+   
+    .feed-h2
+    {
+        font-size: 34px;
+bottom: 20px;
+left: 10px;
+    color: white;
+  position: absolute;
+    }
+     .feed-p
+    {
+        display: none;
+    }
+        .product-p
+    {
+        font-size: 16px;
+        padding: 0;
+    }
+    .products-row p
+    {
+        font-size: 12px;
+    }
+    .product-i
+{
+   
+    flex: 1;
+    margin: 0px 5px;
+    padding: 3px;
+    border: solid 3px   #624A25 ;
+    position: relative;
+    padding-bottom: 100px;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+ .product-i-gut
+{
+  
+    border: solid 3px  #008081;
+    
+}
+ .product-i-toxins
+{
+   border: solid 3px #2C2C31; 
+} 
+.product-i-vets
+{
+   border: solid 3px #CBAB87; 
+}
+ .product-i-raw
+{
+   border: solid 3px #C0C0C0 ; 
+}
+.product-p-raw-fix
+    {
+        text-align: center;
+    }
+    #feed
+{
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+   
+}
+    
+    .products-layer p
+    {
+       font-size: 10px; 
+        line-height: 16px;
+    }
+     .products-layer-i p
+    {
+       font-size: 10px; 
+        line-height: 16px;
+    }
+     .products-layer-ii p
+    {
+       font-size: 10px; 
+     
+          left: 1px;
+    }
+     .products-layer-iii p
+    {
+       font-size: 10px; 
+        line-height: 16px;
+      
+    }
+     .products-layer-v p
+    {
+       font-size: 10px; 
+        line-height: 16px;
+    }
+      .products-layer p span
+    {
+       font-size: 10px;
+    }
+ .products-layer-i p span
+    {
+       font-size: 12px;
+    }
+         .products-layer-ii p span
+    {
+        display: none;
+      
+    }
+         .products-layer-iii p span
+    {
+        font-size: 12px;
+    }
+         .products-layer-v p span
+    {
+       font-size: 12px;
+    }
+    .view-products
+    {
+        font-size: 10px;
+    }
+    .view-products span
+    {
+        display: none;
+    }
+     .view-products-i
+    {
+        font-size: 10px;
+    }
+    .view-products-i span
+    {
+        display: none;
+    }
+     .view-products-ii
+    {
+        font-size: 10px;
+       
+    }
+    .view-products-ii span
+    {
+        display: none;
+    }
+     .view-products-iii
+    {
+        font-size: 10px;
+    }
+    .view-products-iii span
+    {
+        display: none;
+    }
+     .view-products-v
+    {
+        font-size: 10px;
+    }
+    .view-products-v span
+    {
+        display: none;
+    }
+    .products-gallery
+{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+        "h2 h2 h2 h2 h2 h2"
+        "feedManagment feedManagment gutHealthManagement gutHealthManagement  toxinsManagement toxinsManagement"
+        "feedManagment feedManagment gutHealthManagement gutHealthManagement  toxinsManagement toxinsManagement"
+        "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes "
+         "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes"
+         "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes";
+}
+    
+    
+    .more-about
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 50px;
+}
+    .about-i-fix-response
+    {
+        padding-top: 2px;
+        margin-top: 0px;
+    }
 }
 
 
@@ -661,6 +1531,7 @@ ul li
         font-size: 14px;
          
     } 
+
 }
 
 
