@@ -222,7 +222,7 @@ h6
     line-height: 20px;
     letter-spacing: 1px;
     overflow: hidden;
-    padding-top: 50px;
+    padding-top: 30px;
 
 }
 
@@ -791,7 +791,7 @@ left: 10px;
 }
 .feed-p
 {
-    width: 600px;
+    width: 630px;
     bottom:0;
 left:10px;
     color: white;
@@ -833,7 +833,10 @@ color:#624A25;
  
    
 }
-
+.bolding
+{
+    font-weight: bold;
+}
 .product-i
 {
    
@@ -859,7 +862,7 @@ color:#624A25;
     transform: translate(-50%,-50%);
     background:  #624A25 ;
     color: white;
-     font-size:40px;
+     font-size:28px;
     font-weight: 600;
     padding: 1px 30px;
     border: solid 5px rgb(248,248,255);
@@ -881,6 +884,7 @@ color:#624A25;
     padding: 3px;
     font-size: 14px;
     text-align: center;
+    font-weight: 700;
 }
 
 .wave-container
@@ -1086,6 +1090,12 @@ color:#624A25;
     color: #37B599; 
     padding-bottom: 30px;
 }
+.commitment-h
+{
+    font-weight: 700;
+    font-size: 30px;
+    color: #37B599; 
+}
 .about-p
 {
     line-height: 32px;
@@ -1155,6 +1165,7 @@ line-height: 28px;
     #section-ii
     {
         height: auto;
+        padding:0px 50px ;
     }
     #section-iv
     {
@@ -1236,6 +1247,7 @@ line-height: 28px;
     .section-ii-text p
     {
         font-size: 12px;
+        padding: 0px 20px;
     }
     .section-ii-text h2
     {
@@ -1295,8 +1307,8 @@ line-height: 28px;
     }
     .about-h
     {
-        font-size: 14px; 
-        line-height: 14px; 
+        font-size: 30px; 
+        
     }
     .about-p
     {
@@ -1308,10 +1320,13 @@ line-height: 28px;
     {
         display: none;
     }
-    .contact-fix-i
-    {
-        display: none;
-    }
+    #contact
+{
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
     .contact-fix-ii
     {
         display: block;
@@ -1513,6 +1528,10 @@ left: 10px;
     {
         padding-top: 2px;
         margin-top: 0px;
+    }
+   #section-iv h2
+    {
+        padding: 20px 0px;
     }
 }
 
