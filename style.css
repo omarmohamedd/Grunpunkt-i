@@ -376,7 +376,7 @@ h6
 .feed-span
 {
    
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 600;
    
 }
@@ -867,6 +867,7 @@ color:#624A25;
     padding: 1px 30px;
     border: solid 5px rgb(248,248,255);
     border-radius: 12px;
+    text-align: center;
 }
 
 .products-row
@@ -1532,6 +1533,12 @@ left: 10px;
    #section-iv h2
     {
         padding: 20px 0px;
+    }
+    .product-container
+    {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
     }
 }
 
