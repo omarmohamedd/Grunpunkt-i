@@ -87,11 +87,11 @@ animateSectionII();
 
 const sectionIv=document.querySelector("#section-iv");
 const sliderP=document.querySelector("#section-iv h2");
-const uperDivI=document.querySelector(".feed-managment");
+const lowerDivII=document.querySelector(".feed-managment");
 const uperDivII=document.querySelector(".gutHealthManagement");
 const uperDivIII=document.querySelector(".toxinsManagement");
 const lowerDivI=document.querySelector(".vetsSolutions");
-const lowerDivII=document.querySelector(".rawMaterialsAndPremixes");
+const uperDivI=document.querySelector(".rawMaterialsAndPremixes");
 
 
 function sliderAnimation()

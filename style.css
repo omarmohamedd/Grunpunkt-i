@@ -204,8 +204,8 @@ h6
 
 .section-ii-text h2
 {
-    font-weight:900;
-    font-size: 28px;
+    font-weight:800;
+    font-size: 25px;
     color:white;
     line-height: 60px;
     background: #37B599;
@@ -319,11 +319,11 @@ h6
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-areas: 
         "h2 h2 h2 h2 h2 h2"
-        "feedManagment feedManagment gutHealthManagement gutHealthManagement gutHealthManagement toxinsManagement"
-        "feedManagment feedManagment gutHealthManagement gutHealthManagement gutHealthManagement toxinsManagement"
-        "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes "
-         "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes"
-         "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes";
+        "rawMaterialsAndPremixes rawMaterialsAndPremixes gutHealthManagement gutHealthManagement gutHealthManagement toxinsManagement"
+        "rawMaterialsAndPremixes rawMaterialsAndPremixes gutHealthManagement gutHealthManagement gutHealthManagement toxinsManagement"
+        "vetsSolutions vetsSolutions feedManagment feedManagment feedManagment feedManagment "
+         "vetsSolutions vetsSolutions feedManagment feedManagment feedManagment feedManagment"
+         "vetsSolutions vetsSolutions feedManagment feedManagment feedManagment feedManagment";
 }
 
 #section-iv h2
@@ -1086,6 +1086,10 @@ color:#624A25;
     color: #37B599; 
     padding-bottom: 30px;
 }
+.about-p
+{
+    line-height: 32px;
+}
 .more-about
 {
     height: auto;
@@ -1391,38 +1395,38 @@ left: 10px;
     
     .products-layer p
     {
-       font-size: 10px; 
+       font-size: 8px; 
         line-height: 16px;
     }
      .products-layer-i p
     {
-       font-size: 10px; 
+       font-size: 8px; 
         line-height: 16px;
     }
      .products-layer-ii p
     {
-       font-size: 10px; 
+       font-size: 8px; 
      
           left: 1px;
     }
      .products-layer-iii p
     {
-       font-size: 10px; 
+       font-size: 8px; 
         line-height: 16px;
       
     }
      .products-layer-v p
     {
-       font-size: 10px; 
+       font-size: 8px; 
         line-height: 16px;
     }
       .products-layer p span
     {
-       font-size: 10px;
+       font-size: 8px;
     }
  .products-layer-i p span
     {
-       font-size: 12px;
+       font-size:   10px;
     }
          .products-layer-ii p span
     {
@@ -1431,11 +1435,11 @@ left: 10px;
     }
          .products-layer-iii p span
     {
-        font-size: 12px;
+        font-size: 10px;
     }
          .products-layer-v p span
     {
-       font-size: 12px;
+       font-size: 10px;
     }
     .view-products
     {
@@ -1488,11 +1492,11 @@ left: 10px;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-areas: 
         "h2 h2 h2 h2 h2 h2"
-        "feedManagment feedManagment gutHealthManagement gutHealthManagement  toxinsManagement toxinsManagement"
-        "feedManagment feedManagment gutHealthManagement gutHealthManagement  toxinsManagement toxinsManagement"
-        "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes "
-         "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes"
-         "vetsSolutions vetsSolutions rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes rawMaterialsAndPremixes";
+        "rawMaterialsAndPremixes rawMaterialsAndPremixes gutHealthManagement gutHealthManagement  toxinsManagement toxinsManagement"
+        "rawMaterialsAndPremixes rawMaterialsAndPremixes gutHealthManagement gutHealthManagement  toxinsManagement toxinsManagement"
+        "vetsSolutions vetsSolutions feedManagment feedManagment feedManagment feedManagment "
+         "vetsSolutions vetsSolutions feedManagment feedManagment feedManagment feedManagment"
+         "vetsSolutions vetsSolutions feedManagment feedManagment feedManagment feedManagment";
 }
     
     
