@@ -1255,8 +1255,12 @@ line-height: 28px;
         font-size: 14px;
         line-height: 14px;
         text-shadow: none;
+        text-align: center;
     }
-    
+    .maximizing-response
+    {
+        display: none;
+    }
     .svgs svg
     {
         width: 100px;
@@ -1539,6 +1543,14 @@ left: 10px;
         display: flex;
         flex-direction: column;
         margin: auto;
+    }
+    .product-fix
+    {
+        display: none;
+    }
+    .product-response-mobile
+    {
+        margin-top: 0 !important;
     }
 }
 
