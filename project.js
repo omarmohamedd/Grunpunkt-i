@@ -104,10 +104,10 @@ function sliderAnimation()
     
     sliderTl.fromTo(sliderP,{opacity:0,y:"-100%"},{opacity:1,y:"0%"});
         sliderTl.fromTo(uperDivI,{opacity:0,x:"-100%"},{opacity:1,x:"0%"},"-=0.5");
-    sliderTl.fromTo(uperDivII,{opacity:0,x:"-100%"},{opacity:1,x:"0%"},"-=0.3");
-    sliderTl.fromTo(uperDivIII,{opacity:0,x:"-100%"},{opacity:1,x:"0%"});
-    sliderTl.fromTo(lowerDivI,{opacity:0,x:"100%"},{opacity:1,x:"0%"},"-=1.5");
-    sliderTl.fromTo(lowerDivII,{opacity:0,x:"100%"},{opacity:1,x:"0%"},"-=1");
+    sliderTl.fromTo(uperDivIII,{opacity:0,x:"100%"},{opacity:1,x:"0%"},"-=1");
+    sliderTl.fromTo(uperDivII,2.3,{opacity:0},{opacity:1},"-=0.3");
+    sliderTl.fromTo(lowerDivI,{opacity:0,x:"-120%"},{opacity:1,x:"0%"},"-=1.8");
+    sliderTl.fromTo(lowerDivII,{opacity:0,x:"100%"},{opacity:1,x:"0%"},"-=1.8");
 new ScrollMagic.Scene({
         
          triggerElement: sectionIv,
