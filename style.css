@@ -1243,14 +1243,13 @@ line-height: 28px;
    .nav-logo img
     {
         
-        height: 5vh;
+        height: 4vh;
        object-fit: contain;
     }
     .nav-logo img
     {
         position: absolute;
-        top: 0px;
-        transform: translateY(16%);
+        top: 10px;
         left: -70px;
     }
     .navbar
@@ -1284,7 +1283,7 @@ line-height: 28px;
   h5
     {
       font-size: 30px;
-       top:  50%;
+       top:  55%;
         line-height: 30px;  
     }
     h6
@@ -1598,7 +1597,8 @@ left: 10px;
     }
    #section-iv h2
     {
-        padding: 20px 0px;
+        padding: 0px 0px;
+        font-size: 30px;
     }
     .product-container
     {
@@ -1638,8 +1638,9 @@ left: 10px;
     }
     .products-i-p h2
     {
-        font-size: 14px;
-        line-height: 14px; 
+        font-size: 24px;
+        line-height: 24px; 
+        font-weight: bold;
     }
     .products-i-p p
     {
