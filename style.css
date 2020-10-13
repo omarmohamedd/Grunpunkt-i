@@ -707,14 +707,14 @@ ul li
 #feed
 {
     height: auto;
-    width: 100%;
+    width: 100vw;
     padding-top: 60px;
    
 }
 .feed-img
 {
     height: 50%;
-    background-image: url(imgs/feedEfficiency.jpeg);
+    background-image: url(imgs/Internal-Feed.jpg);
     background-size: 100% 100%;  
     background-repeat: no-repeat;
        filter: blur(1px);
@@ -725,7 +725,7 @@ ul li
 .feed-img-gut
 {
      height: 50%;
-    background-image: url(imgs/Grunpunket-11.jpg);
+    background-image: url(imgs/Internal-Health.jpg);
     background-size: 100% 100%;  
     background-repeat: no-repeat;
        filter: blur(1px);
@@ -735,7 +735,7 @@ ul li
 .feed-img-toxins
 {
      height: 50%;
-    background-image: url(imgs/Grunpunket-12.jpg);
+    background-image: url(imgs/Internal-Toxin.jpg);
     background-size: 100% 100%;  
     background-repeat: no-repeat;
        filter: blur(1px);
@@ -745,7 +745,7 @@ ul li
 .feed-img-vets
 {
      height: 50%;
-    background-image: url(imgs/Grunpunket-13.jpg);
+    background-image: url(imgs/Internal-Vet.jpg);
     background-size: 100% 100%;  
     background-repeat: no-repeat;
        filter: blur(1px);
@@ -755,7 +755,7 @@ ul li
 .feed-img-raw
 {
      height: 50%;
-    background-image: url(imgs/Grunpunket-14.jpg);
+    background-image: url(imgs/Internal-Raw.jpg);
     background-size: 100% 100%;  
     background-repeat: no-repeat;
        filter: blur(1px);
@@ -781,6 +781,7 @@ ul li
     width: 90%;
     margin: auto;
     padding-top: 50px;
+    display: flex;
 }
 
 .feed-h2
@@ -815,7 +816,7 @@ left:10px;
   position: absolute; 
     font-size: 18px;
     font-weight: 700;
-    text-align: center;
+    
 }
 .gut-p-fix
 {
@@ -854,259 +855,243 @@ color:#624A25;
 {
     font-weight: bold;
 }
-.product-i
+
+.x-product
 {
-   
-    flex: 1;
-    margin: 0px 10px;
-    padding: 5px;
-    border: solid 5px   #624A25 ;
-    position: relative;
-    padding-bottom: 100px;
+    height: auto;
+    width: 50vw;
     transform: scale(0.9);
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
+   
+   
 }
-.product-i:hover
+.product-line
 {
-    transform: scale(1);
-    box-shadow: 6px 6px 6px gray;
+      width: 50vw;
+    height: 5px;
+    background: rgba(0,0,0,0.3);
 }
-.product-p
-{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background:  #624A25 ;
-    color: white;
-     font-size:28px;
-    font-weight: 600;
-    padding: 1px 30px;
-    border: solid 5px rgb(248,248,255);
-    border-radius: 12px;
-    text-align: center;
-}
-
-.products-row
-{
-    display: flex;
-
-}
-
-.products-row p
-{
-   flex: 1;
-    background:  #624A25 ;
-    margin: 0px 5px;
-    color: white;
-    padding: 3px;
-    font-size: 14px;
-    text-align: center;
-    font-weight: 700;
-}
-
-.wave-container
-{
-    position: absolute;
-    left: -0.3%;
-    bottom: 0;
-    width: 60%;
-    height:40%;
-    overflow: hidden;
-}
-.upper-wave-container
-{
-    position: absolute;
-    right: -0.2%;
-    top: -0.3%;
-    width: 50%;
-    height:20%;
-    overflow: hidden;
-}
-.upper-product-wave-img
-{
-    width: 400px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(33%,-36%);
-}
-
-.product-wave-img
-{
-    width: 400px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(-10%,25%);
-}
-.vets-wave-fix
-{
-   transform: translate(-12%,25%);  
-}
-.raw-wave-fix
-{
-   transform: translate(-15%,25%);  
-}
-.feed-wave-fix
-{
-    transform: translate(-12%,25%);  
-}
-.down-logo
-{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 300px;
-    transform: translate(30%,35%);
-}
-.upper-logo
-{ 
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 240px;
-    transform: translate(-42%,-37%);
-    
-}
-.upper-logo-left
-{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 240px;
-    transform: translate(42%,-37%);  
-}
-.down-logo-left
-{
-      position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 300px;
-    transform: translate(-30%,35%); 
-}
-.wave-container-left
-{
-     position: absolute;
-    right: -0.3%;
-    bottom: 0;
-    width: 60%;
-    height:40%;
-    overflow: hidden;  
-}
-
-.product-wave-img-left
-{
-  width: 400px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-      transform: translate(10%,25%);
-}
-.feed-wave-fix-left
-{
-    transform: translate(12%,25%);  
-}
-.vets-wave-fix-left
-{
-         transform: translate(12%,25%);
-}
-.raw-wave-fix-left
-{
-      transform: translate(15%,25%);
-}
-.upper-wave-container-left
-{
-     position: absolute;
-    left: -0.2%;
-    top: -0.3%;
-    width: 50%;
-    height:20%;
-    overflow: hidden;
-  
-}
-
-.upper-product-wave-img-left
-{
-    width: 400px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-33%,-36%);
-}
-
-
-.product-i-gut
-{
-   border: solid 5px #008081; 
-}
-.product-p-gut
+.gut-line-fix
 {
     background: #008081;
 }
-.products-row-gut p
+.toxins-line-fix
 {
-      background: #008081;
+    background: #742323;
 }
-
-.product-i-toxins
-{
-   border: solid 5px #2C2C31; 
-}
-.product-p-toxins
-{
-    background: #2C2C31;
-}
-.products-row-toxins p
-{
-      background: #2C2C31;
-}
-
-.product-i-vets
-{
-   border: solid 5px #CBAB87; 
-}
-.product-p-vets
+.vets-line-fix
 {
     background: #CBAB87;
 }
-.products-row-vets p
+.feed-line-fix
 {
-      background: #CBAB87;
+   background: #624A25;
 }
-
-
-.product-i-raw
+.x-product:hover
 {
-   border: solid 5px #C0C0C0 ; 
+  transform: scale(1);
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.5);
 }
-.product-p-raw
+.x-row-title
 {
-    background: #C0C0C0 ;
-}
-.products-row-raw p
-{
-      background: #C0C0C0 ;
-}
-.product-p-raw-fix
-{
+    padding: 5px;
+    color: #C0C0C0;
     font-size: 26px;
+    font-weight: bold;
 }
+.gut-title-fix
+{
+    color: #008081;
+}
+.toxins-title-fix
+{
+ color: #742323;   
+}
+.vets-title-fix
+{
+    color: #CBAB87;
+}
+.feed-title-fix
+{
+    color: #624A25;
+}
+.x-product ul li
+{
+    list-style:inside;
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+.x-product-container
+{
+    
+    flex: 2;
+}
+.navigation
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+ 
+    
+}
+.nav-row-1
+{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+    
+}
+.nav-row-1 span
+{
+    color: white;
+}
+.nav-row-link-1
+{
+    flex: 1;
+   
+    background-image: linear-gradient(to bottom right,  #A5D3D3, #048283);
+   border: solid 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+.link-1-raw
+{
+     
+    background-image: linear-gradient(to bottom right,  #EDEDED, #C0C0C0);
+   
+}
+.gut-btn
+{
+     background-image: linear-gradient(to bottom right,  #A5D3D3, #048283) !important;
+}
+.nav-row-link-2
+{
+    flex: 1;
+   
+      background-image: linear-gradient(to bottom right,  #8E7D62, #624A25);
+    border: solid 2px white;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+     text-align: center;
+       transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+.feed-btn
+{
+         background-image: linear-gradient(to bottom right,  #8E7D62, #624A25)!important;
+}
+.nav-row-link-3
+{
+    flex: 1;
+ background-image: linear-gradient(to bottom right,  #E8DBCB,#CBAB87);
+    border: solid 2px white;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+     text-align: center;
+       transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+.vets-btn
+{
+    background-image: linear-gradient(to bottom right,  #E8DBCB,#CBAB87)!important;
+}
+.nav-row-link-4
+{
+    flex: 1;
+
+     background-image: linear-gradient(to bottom right, #BB9393,#742323);
+    border: solid 2px white;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+     text-align: center;
+       transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+.toxins-btn
+{
+    background-image: linear-gradient(to bottom right, #BB9393,#742323)!important;
+}
+.nav-row-link-1:hover
+{
+     transform: scale(1);  
+}
+.nav-row-link-2:hover
+{
+     transform: scale(1);  
+}
+.nav-row-link-3:hover
+{
+     transform: scale(1);  
+}
+.nav-row-link-4:hover
+{
+     transform: scale(1);  
+}
+
+.navigation-buttons
+{
+    display: none;
+}
+
 
 #about
 {
-    height:auto;
+    height:80vh;
     width: 100%;
-    padding-top: 100px;
    text-align: center;
+    background-image: url(imgs/about.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+       align-items: center;
+    justify-content: center;
 }
 
 .about-h
 {
     font-weight: 700;
-    font-size: 40px;
-    color: #37B599; 
-    padding-bottom: 30px;
+    font-size: 6vw;
+    color: white; 
+    transform: translateY(10%);
+ 
+}
+.about-info
+{
+    padding-top: 50px;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-info p
+{
+  color: #424240;
+  font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
 }
 .commitment-h
 {
@@ -1171,7 +1156,11 @@ line-height: 28px;
 {
     color: #3F3F3F;
 }
-
+.maps-response
+    {
+        width: 40vw;
+        height: 300px;
+    }
 @media(max-width:900px)
 {
     .carousel-item img
@@ -1198,8 +1187,50 @@ line-height: 28px;
     {
         padding-left: 0 !important;
     }
-   
+    
+    .navigation
+    {
+        display: none;
+    }
+   .x-product
+    {
+        width: 100vw;
+    }
+    .x-row-title
+{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
 }
+.x-product ul li
+{
+    list-style:inside;
+    font-size: 14px;
+    padding-left: 5px;
+}
+    .product-line
+    {
+        width:90vw;
+    }
+   .navigation-buttons   
+    {
+        padding: 5px  0px;
+        text-align: center;
+        display: flex;
+    }
+    .navigation-buttons a
+    {
+        color: white !important;
+       margin: 5px;
+        flex: 1;
+    }
+   .feed-container
+    {
+        width: 100%;
+    }
+}
+
+
 @media (max-width:1200px)
 {
     html,body{
@@ -1450,7 +1481,7 @@ left: 10px;
      .products-layer-ii p
     {
        font-size: 8px; 
-     
+        line-height: 16px;
     }
      .products-layer-iii p
     {
@@ -1578,6 +1609,17 @@ left: 10px;
     {
         margin-top: 0 !important;
     }
+    .about-h
+    {
+      font-size: 10vw;
+        transform: translateY(20%);
+    }
+    .navbar-toggler
+    {
+        margin-right: 10px !important;
+    }
+    
+    
 }
 
 
