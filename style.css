@@ -1161,6 +1161,7 @@ line-height: 28px;
         width: 40vw;
         height: 300px;
     }
+
 @media(max-width:900px)
 {
     .carousel-item img
@@ -1238,12 +1239,12 @@ line-height: 28px;
 }
     nav
     {
-        height: auto !important;
+        min-height: 8vh !important;
     }
    .nav-logo img
     {
         
-        height: 4vh;
+        height: 6vh;
        object-fit: contain;
     }
     .nav-logo img
@@ -1578,7 +1579,7 @@ left: 10px;
 }
    .vetsSolutions img
     {
-      object-position:-7em 0px;
+      object-position:-7vw 0px;
     }
    
     .more-about
