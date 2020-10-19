@@ -62,6 +62,11 @@ background:#ffff;
 {
     margin-left: 150px;
 }
+.nav-logo img
+{
+   width: 80%!important;
+    object-fit: contain;
+}
 .response-img
 {
     object-fit: cover;
@@ -153,6 +158,11 @@ h6
     font-size: 50px;
     line-height: 60px;
 }
+.carousel-shadow
+{
+    text-shadow: 4px 4px 3px black;
+}
+
 .span-2
 {
     color: #00A86B;
@@ -555,7 +565,7 @@ h6
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
-     border: solid 10px #CBAB87;
+     border: solid 10px #00BFFF;
 }
 .products-layer-v p
 {
@@ -669,10 +679,17 @@ footer
     background:#37B599;
     color: #F5F5F1;
 }
-
+footer h4,h3
+{
+    font-size: 22px;
+}
+.copyRight
+{
+    font-size: 13px;
+}
 .footer-container
 {
-    width: 80%;
+    width: 90%;
     margin: auto;
    
 }
@@ -881,7 +898,7 @@ color:#624A25;
 }
 .vets-line-fix
 {
-    background: #CBAB87;
+    background:#00BFFF;
 }
 .feed-line-fix
 {
@@ -909,7 +926,7 @@ color:#624A25;
 }
 .vets-title-fix
 {
-    color: #CBAB87;
+    color: #00BFFF;
 }
 .feed-title-fix
 {
@@ -996,7 +1013,7 @@ color:#624A25;
 .nav-row-link-3
 {
     flex: 1;
- background-image: linear-gradient(to bottom right,  #E8DBCB,#CBAB87);
+ background-image: linear-gradient(to bottom right, #B8D1E0, #00BFFF);
     border: solid 2px white;
         display: flex;
     justify-content: center;
@@ -1010,7 +1027,7 @@ color:#624A25;
 }
 .vets-btn
 {
-    background-image: linear-gradient(to bottom right,  #E8DBCB,#CBAB87)!important;
+    background-image: linear-gradient(to bottom right,#B8D1E0, #00BFFF)!important;
 }
 .nav-row-link-4
 {
@@ -1054,6 +1071,23 @@ color:#624A25;
     display: none;
 }
 
+#about-product
+{
+    height:80vh;
+    width: 100%;
+   text-align: center;
+    background-image: url(imgs/121810607_803860287094099_6156208069627951639_n.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+       align-items: center;
+    justify-content: center;
+}
+.x-fix
+{
+    transform: translateY(-10%);
+}
 
 #about
 {
@@ -1455,7 +1489,7 @@ left: 10px;
 } 
 .product-i-vets
 {
-   border: solid 3px #CBAB87; 
+   border: solid 3px #00BFFF; 
 }
  .product-i-raw
 {
@@ -1648,7 +1682,10 @@ left: 10px;
         font-size: 14px;
          
     } 
-
+.carousel-shadow
+    {
+        text-shadow: 2px 2px 3px black;
+    }
 }
 
 
